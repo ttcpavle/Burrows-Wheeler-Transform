@@ -1,0 +1,4 @@
+# ignore changes to build, renders and objects
+BurrowsWheelerTransform/build/*
+!BurrowsWheelerTransform/build/.keep
+BurrowsWheelerTransform/includes/config.h
