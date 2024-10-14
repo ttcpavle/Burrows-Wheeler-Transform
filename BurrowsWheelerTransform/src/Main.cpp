@@ -6,19 +6,21 @@ int main() {
     // read from file
     string original = readFile(FILEPATH(INPUT_FILES, "loremipsum.txt"));
 
-    // encode
+    // ENCODE -----------------------------------------------------------
 	auto start_encode = chrono::high_resolution_clock::now();
     cout << "encoding started...\n";
     string encoded = BWT_encode(original);
     cout << "encoding ended\n";
     auto end_encode = chrono::high_resolution_clock::now();
+    // ENCODE END -------------------------------------------------------
     
-    // decode
+    // DECODE -----------------------------------------------------------
     auto start_decode = chrono::high_resolution_clock::now();
     cout << "decoding started...\n";
     string decoded = BWT_decode(encoded);
     cout << "decoding ended\n";
     auto end_decode = chrono::high_resolution_clock::now();
+    // DECODE END -------------------------------------------------------
 
     // display to compare
     cout << "\nOriginal: " + original << endl;

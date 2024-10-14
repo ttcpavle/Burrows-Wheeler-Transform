@@ -42,6 +42,4 @@ string runLengthDecode(const string& rl_code);
 string readFile(const char* filename);
 int writeFile(const char* filename, const string& data);
 
-string filepath(const string directory, const string filename);
-
 #endif
